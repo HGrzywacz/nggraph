@@ -1,7 +1,4 @@
-nggraph
-=======
-
-# grunt-angular-modules-graph
+# nggraph
 
 > Generates AngularJS dependencies graph in .dot format.
 
