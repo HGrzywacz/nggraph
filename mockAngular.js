@@ -28,34 +28,38 @@ function Module (name) {
   this.controller = function (name, deps) {
     this.pieces[name] = new Piece(name, 'controller', deps);
     return this;
-  }
+  };
 
   this.factory = function (name, deps) {
     this.pieces[name] = new Piece(name, 'factory', deps);
     return this;
-  }
+  };
 
   this.service = function (name, deps) {
     this.pieces[name] = new Piece(name, 'service', deps);
     return this;
-  }
+  };
 
   this.provider = function (name, deps) {
     this.pieces[name] = new Piece(name, 'provider', deps);
     return this;
-  }
+  };
 
   this.constant = function (name, deps) {
     this.pieces[name] = new Piece(name, 'constant', deps);
     return this;
-  }
+  };
 
   this.filter = function (name, deps) {
     this.pieces[name] = new Piece(name, 'filter', deps);
     return this;
-  }
+  };
 
   this.config = function () {
+    return this;
+  };
+
+  this.run = function () {
     return this;
   };
 }

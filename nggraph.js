@@ -26,8 +26,7 @@ function findCallback (error, stdout, stderr) {
   var files = stdout.split('\n');
   files.forEach(function (file) {load(file)});
 
-  diagram.printNodes();
-
+  diagram.printDiagram();
 }
 
 exec('find app/ -type f -name "*.js"', findCallback);
